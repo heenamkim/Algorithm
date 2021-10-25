@@ -4,11 +4,9 @@ student = int(input())
 
 for i in range(student):
     score = list(map(int, input().split()))
-    total = 0
     ave = (sum(score[1:]))/score[0]
-    print(ave)
     people = 0
-    for k in score:
+    for k in score[1:]:
         if ave < k:
             people += 1
         else:
