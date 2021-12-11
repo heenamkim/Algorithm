@@ -3,11 +3,6 @@
 
 word = input()
 
-word_num = 0
-
 word = word.split()
 
-for i in word:
-    word_num += 1
-
-print(word_num)
+print(len(word))
